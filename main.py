@@ -1,4 +1,4 @@
-def factOrSum(O, x):
+def factOrSum(x, O):
     num = 1
 
     if O == "factorial":
@@ -9,6 +9,7 @@ def factOrSum(O, x):
     else:
         total = 0
         
-        for i in range(0 , x):
+        for i in range(0 , x + 1):
             total = total + i
         return total
+print(factOrSum(3,"sum"))
